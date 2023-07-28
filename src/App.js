@@ -24,23 +24,23 @@ const App = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
       <h1 className="text-4xl font-bold mt-8 mb-4">My Web3 Project</h1>
-        <div className="flex flex-col items-center mt-8">
-          <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-            onClick={connectWallet}
-          >
-            Connect Wallet
-          </button>
-          <div className="mt-4">
-            Connected Wallet: {connectedWallet ? connectedWallet : 'Not connected'}
-          </div>
+      <div className="flex flex-col items-center mt-8">
+        <button
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          onClick={connectWallet}
+        >
+          Connect Wallet
+        </button>
+        <div className="mt-4">
+          Connected Wallet: {connectedWallet ? connectedWallet : 'Not connected'}
         </div>
-        {connectedWallet ? (
+      </div>
+      {connectedWallet ? (
         <>
-          <DepositForm />
-          <WithdrawForm />
+          {/* <DepositForm />
+          <WithdrawForm /> */}
         </>
-    ) : null}
+      ) : null}
     </div>
   );
 };
