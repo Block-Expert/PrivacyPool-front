@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Web3 from 'web3';
-import DepositForm from './components/DepositForm';
-import WithdrawForm from './components/WithdrawForm';
+// import DepositForm from './components/DepositForm';
+// import WithdrawForm from './components/WithdrawForm';
 
 const App = () => {
 
